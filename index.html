@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head> 
+<body>
+    <a id = "logout_a"onClick="window.location.reload()" href="javascript:localStorage.clear();">logout</a>
+    <div id ="weather_city">
+        <span id ="weather"></span><!--날씨-->
+        <span id="city"></span><!--도시이름-->
+    </div>
+    
+    <h2 id = "clock">00:00:00</h2>
+
+    <form id="login" class="hidden">
+        <input id="login_input"  required maxlength="10" type="text" placeholder="What your name?"/>
+    </form>
+
+
+    <h1 id="userHello" class="hidden"> hello</h1>
+
+    <form id="todo">  
+        <input id="input_todo" type="text" maxlength="10" placeholder="할 일을 입력하세요">
+    </form>
+    <ul id="todo-list">
+
+    </ul>
+
+    <div id="quote">
+        <span></span>
+        <br/>
+        <span></span>
+    </div>
+
+
+    
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/to.js"></script>
+    
+</body>
+</html>

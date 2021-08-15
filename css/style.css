@@ -1,0 +1,86 @@
+.hidden {
+    display: none;
+}
+.back{
+    background-size: cover;
+    z-index: -4;
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    animation: fadeIn 2s linear;
+
+}
+@keyframes  fadeIn {
+    from{
+        opacity:0;
+
+    }to{
+        opacity:1;
+    }
+}
+body{
+    text-align: center;
+    padding-top: 15%;
+    color:rgb(199, 27, 27)
+}
+#clock{
+    font-size: 50pt;
+    margin-bottom:10pt;
+}
+#userHello{
+    font-size: 30pt;
+    margin-top :20pt
+}
+#quote{
+    padding-bottom: 20%;
+}
+#login_input{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border :none;
+    border-radius: 20px;
+}
+#weather_city{
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color :black;
+    text-align: right;
+}
+#weather{
+    color: greenyellow;
+    z-index:10px;
+    text-shadow: black 2px 3px;
+}
+
+
+#todo{
+    padding-top: 10px;
+}
+#input_todo{
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    text-align: center;
+}
+ul{
+    list-style:none;
+}
+button{
+    margin:3px;
+    background-color: blue;
+}
+#logout_a{
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    top: 10px;
+    left:0px;
+    color :darkorange;
+}
